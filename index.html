@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeWave Technologies | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- THREE.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <button class="dark-btn" onclick="darkMode()">🌙</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>CodeWave Technologies</h1>
+    <p>Building Scalable & Modern Software Solutions</p>
+    <button>Get Started</button>
+    <div id="three-container"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+      CodeWave Technologies is a software development company delivering innovative digital solutions.
+    </p>
+
+    <!-- COUNTERS -->
+    <div class="stats">
+      <div class="stat-box">
+        <h3 id="projects">0</h3>
+        <p>Projects</p>
+      </div>
+      <div class="stat-box">
+        <h3 id="clients">0</h3>
+        <p>Clients</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Web Development</div>
+      <div class="card">Mobile App Development</div>
+      <div class="card">Cloud Solutions</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <button onclick="send()">Send Message</button>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

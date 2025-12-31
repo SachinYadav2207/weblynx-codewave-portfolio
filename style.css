@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial;
+  background: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(30, 60, 114, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dark-btn {
+  margin-left: 20px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero h1 { font-size: 38px; }
+.hero p { font-size: 18px; }
+.hero button { padding: 12px 25px; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; }
+
+/* 3D CONTAINER */
+#three-container { width: 100%; height: 300px; margin-top: 30px; }
+
+/* SECTION */
+.section { padding: 60px 20px; text-align: center; }
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.stat-box, .card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.stat-box h3 { font-size: 32px; color: #00aaff; margin: 0; }
+
+.stat-box:hover, .card:hover { transform: translateY(-8px); }
+
+/* SERVICES CARDS */
+.cards { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
+.card { width: 220px; margin: 15px; text-align: center; }
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: #fff;
+}
+.dark .section { background: rgba(0,0,0,0.3); }
+.dark .card, .dark .stat-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav a { display: block; margin: 10px 0; }
+  .stats { flex-direction: column; }
+  .card { width: 90%; }
+}
